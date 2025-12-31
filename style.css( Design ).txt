@@ -1,47 +1,118 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f4f6f8;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #f1f4f8;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* HEADER */
 header {
-  background: #002244;
-  color: white;
-  padding: 20px;
+  background: linear-gradient(90deg, #0a2540, #102a43);
+  color: #ffffff;
+  padding: 30px 15px;
   text-align: center;
 }
 
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+header p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* NAVIGATION */
 nav {
-  text-align: center;
-  margin: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  background-color: #ffffff;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
 
 nav button {
-  padding: 10px 15px;
-  margin: 5px;
-  border: none;
-  background: #004aad;
+  background-color: #0a58ca;
   color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 0.95rem;
   cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 nav button:hover {
-  background: #00337a;
+  background-color: #084298;
 }
 
+/* CONTENT AREA */
 #news {
-  padding: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 15px;
 }
 
+/* ARTICLE CARD */
 .article {
-  background: white;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-left: 4px solid #004aad;
+  background: #ffffff;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border-left: 5px solid #0a58ca;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease;
 }
 
+.article:hover {
+  transform: translateY(-3px);
+}
+
+.article h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #0a2540;
+}
+
+.article a {
+  text-decoration: none;
+  color: #0a58ca;
+  font-weight: 500;
+}
+
+.article a:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
 footer {
+  background-color: #e9ecef;
   text-align: center;
-  padding: 10px;
-  background: #ddd;
+  padding: 15px;
+  font-size: 0.9rem;
+  color: #333;
+  margin-top: 40px;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.7rem;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  nav button {
+    width: 100%;
+  }
 }
