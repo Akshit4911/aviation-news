@@ -19,6 +19,12 @@
   <button onclick="loadGlobal()">Global Aviation</button>
   <button onclick="loadLaws()">Aviation Laws</button>
   <button onclick="toggleDarkMode()">Dark Mode</button>
+<input
+  type="text"
+  id="searchInput"
+  placeholder="Search aviation news..."
+  onkeyup="searchNews()"
+/>
 
 </nav>
 
@@ -29,6 +35,17 @@
     Stay updated with real-time aviation news, airline developments,
     and regulatory updates from India and across the world.
   </p>
+</section>
+<section class="airlines">
+  <h2>Major Airlines Covered</h2>
+
+  <div class="airline-logos">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/IndiGo_Logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Air_India_Logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Vistara_Logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Emirates_logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Qantas_Airways_logo.svg">
+  </div>
 </section>
 
 <!-- ===== AVIATION INSIGHTS ===== -->
@@ -136,6 +153,11 @@
 </section>
 
 <!-- ===== FOOTER (CORRECT & FINAL POSITION) ===== -->
+<!-- ===== AD PLACEHOLDER ===== -->
+<section class="ads">
+  <!-- Google AdSense code will go here -->
+</section>
+
 <footer>
   <p>© 2026 Aviation Insight India</p>
   <p>
@@ -149,4 +171,5 @@
   
 </body>
 </html>
+
 
