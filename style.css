@@ -60,6 +60,23 @@ nav button:hover {
   margin: 30px auto;
   padding: 0 15px;
 }
+.news-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.news-card h3 {
+  color: #0b1f3a;
+  line-height: 1.4;
+}
+
+.news-card a {
+  color: #0b5ed7;
+  font-weight: 600;
+}
 
 /* ARTICLE CARD */
 .article {
@@ -138,3 +155,4 @@ button:hover {
   transform: translateY(-2px);
   background-color: #084298;
 }
+
