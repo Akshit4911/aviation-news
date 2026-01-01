@@ -116,3 +116,25 @@ footer {
     width: 100%;
   }
 }
+
+body {
+  background: #f4f7fb;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+header {
+  background: linear-gradient(135deg, #0b1f3a, #0b5ed7);
+}
+
+h1, h2 {
+  letter-spacing: 0.5px;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background-color: #084298;
+}
