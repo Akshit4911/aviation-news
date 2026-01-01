@@ -221,3 +221,26 @@ button:hover {
   color: #e5e7eb;
 }
 
+nav input {
+  padding: 8px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.airline-logos {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.airline-logos img {
+  height: 50px;
+  filter: grayscale(100%);
+}
+
+.ads {
+  margin: 30px 0;
+  text-align: center;
+}
