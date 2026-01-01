@@ -18,7 +18,7 @@ function fetchNews(rss) {
       items.forEach((el, i) => {
         if (i < 10) {
           output += `
-          <div class="article">
+          <div class="news-card">
             <h3>${el.querySelector("title").textContent}</h3>
             <a href="${el.querySelector("link").textContent}" target="_blank">
               Read full news
@@ -36,3 +36,7 @@ function loadLaws() { fetchNews(lawsRSS); }
 
 // Load India news by default
 loadIndia();
+
+function toggleDarkMode() {
+  document.body.classList.toggle("dark-mode");
+}
