@@ -1,8 +1,9 @@
 const proxy = "https://api.allorigins.win/raw?url=";
 
 const indiaRSS = "https://news.google.com/rss/search?q=aviation+India";
-const globalRSS = "https://news.google.com/rss/search?q=global+aviation";
-const lawsRSS = "https://news.google.com/rss/search?q=DGCA+aviation+rules";
+const globalRSS = "https://news.google.com/rss/search?q=aviation+airlines+worldwide&hl=en-US&gl=US&ceid=US:en";
+const lawsRSS = "https://news.google.com/rss/search?q=DGCA+aviation+regulations+passenger+rights&hl=en-IN&gl=IN&ceid=IN:en";
+
 
 function fetchNews(rss) {
   document.getElementById("loading").style.display = "block";
@@ -70,3 +71,4 @@ function searchNews() {
     card.style.display = text.includes(input) ? "block" : "none";
   });
 }
+
