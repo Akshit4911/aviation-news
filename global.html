@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Global Aviation News | Aviation Insight India</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🌍 Global Aviation News</h1>
+  <p>Worldwide airline, airport & aviation industry updates</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="india.html">India Aviation</a>
+  <a href="global.html">Global Aviation</a>
+  <a href="laws.html">Aviation Laws</a>
+  <a href="jobs.html">Aviation Jobs</a>
+  <button onclick="toggleDarkMode()">Dark Mode</button>
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search global aviation news..."
+    onkeyup="searchNews()"
+  />
+</nav>
+
+<section class="intro">
+  <h2>International Aviation Industry</h2>
+  <p>
+    Track global airlines, aircraft manufacturers, international
+    regulations, airport developments, and aviation trends.
+  </p>
+</section>
+
+<section id="news">
+  <h2>Latest Global Aviation News</h2>
+  <p>Loading global aviation headlines...</p>
+</section>
+
+<footer>
+  <p>© 2026 Aviation Insight India</p>
+  <p>
+    Sources: ICAO | IATA | Google News | Reuters  
+    <br>
+    Informational & educational purpose only.
+  </p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  loadGlobal();
+</script>
+
+</body>
+</html>
