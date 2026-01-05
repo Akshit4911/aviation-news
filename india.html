@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>India Aviation News | Aviation Insight India</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <h1> India Aviation News</h1>
+  <p>Latest Indian aviation headlines, airlines & policy updates</p>
+</header>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="india.html">India Aviation</a>
+  <a href="global.html">Global Aviation</a>
+  <a href="laws.html">Aviation Laws</a>
+  <a href="jobs.html">Aviation Jobs</a>
+  <button onclick="toggleDarkMode()">Dark Mode</button>
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search India aviation news..."
+    onkeyup="searchNews()"
+  />
+</nav>
+
+<!-- ===== INTRO ===== -->
+<section class="intro">
+  <h2>Indian Aviation Industry Updates</h2>
+  <p>
+    Stay informed about Indian airlines, airports, DGCA updates,
+    policy changes, fleet expansions, and passenger rights.
+  </p>
+</section>
+
+<!-- ===== NEWS SECTION ===== -->
+<section id="news">
+  <h2>Latest India Aviation News</h2>
+  <p>Loading latest Indian aviation headlines...</p>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 Aviation Insight India</p>
+  <p>
+    Sources: DGCA | Google News | Reuters | Indian Aviation Media  
+    <br>
+    Educational & informational use only.
+  </p>
+</footer>
+
+<!-- ===== SCRIPT ===== -->
+<script src="script.js"></script>
+<script>
+  // Load India news automatically
+  loadIndia();
+</script>
+
+</body>
+</html>
